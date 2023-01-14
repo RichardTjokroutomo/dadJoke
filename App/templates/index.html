@@ -1,0 +1,35 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>getDadJoke</title>
+        <script src="{%static 'bootstrap_js/bootstrap.js' %}"></script>
+        <link rel="stylesheet" href="{%static 'bootstrap_css/bootstrap.css'%}">
+        <link rel="stylesheet" href="{%static 'index.css'%}">
+        <link rel="icon" href="{%static 'trollface.png'%}">
+    </head>
+
+    <body>
+        <div class="container text-center mt-5">
+            <div class="row">
+                <h1 class="texts">Random dad joke!</h1>
+            </div>
+            <div class="row mt-2">
+                <div class="col"></div>
+                <div class="col">
+                    <button id="getJokeButton" class="btn btn-dark mt-2">Get a random joke</button>
+                </div>
+                <div class="col"></div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col mt-5">
+                    <p id="jokeDisplay" class="texts"></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="{%static 'bootstrap_js/bootstrap.js' %}"></script>
+        <script src="{%static 'index.js'%}"></script>
+    </body>
+</html>
